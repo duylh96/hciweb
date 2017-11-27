@@ -1,0 +1,18 @@
+.body{
+    margin: 0;
+    border: 1px solid black;
+    padding: 0;
+    width: 1366px;
+    height: 768px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('Images/background.png')
+}
+.centerInfo{
+    position: absolute;
+    top: 130px;
+    left: 380px;
+}
+#bigImagePoster{
+    
+}
