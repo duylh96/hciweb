@@ -10,9 +10,8 @@
 .centerInfo {
     position: absolute;
     top: 130px;
-    left: 380px;
-    width: 525px;
-    height: 435px;
+    left: 519px;
+    background: transparent;
 }
 
 #bigImageBorder {
@@ -21,10 +20,49 @@
 }
 
 #bigImagePoster {
-    top: 5px;
-    left: 91px;
-    width: 432px;
-    height: 425px;
+    top: 0px;
+    left: 0px;
     position: absolute;
-    background-color: rgba(3, 24, 29, 0.1);
+    width: 450px;
+    height: 455px;
+}
+
+#bigImagePortal {
+    position: absolute;
+    top: 114px;
+    left: -30px;
+    animation: portalmove 1.2s infinite;
+}
+
+@keyframes portalmove {
+    0% {
+        left: -40px
+    }
+    50% {
+        left: -28px
+    }
+    100% {
+        left: -40px;
+    }
+}
+
+.Movie_Title {
+    display: inline-flex;
+    position: absolute;
+    left: 429px;
+    top: 12px;
+    width: 527px;
+    height: 67px;
+}
+
+.Movie_Title p {
+    flex: 1;
+    color: white;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
 }
