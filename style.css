@@ -17,12 +17,11 @@
 #bigImageBorder {
     width: 100%;
     height: 100%;
-    animation: rotate 1s infinite;
 }
 
 #bigImagePoster {
-    top: 0px;
-    left: 0px;
+    top: 8px;
+    left: 8px;
     position: absolute;
 }
 
@@ -46,10 +45,13 @@
 }
 
 @keyframes rotate {
-    from {
+    0% {
         transform: rotate(0deg);
     }
-    to {
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
         transform: rotate(360deg);
     }
 }
