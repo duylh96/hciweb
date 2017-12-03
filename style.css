@@ -32,6 +32,36 @@
     animation: portalmove 1.2s infinite;
 }
 
+#pick_border{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: fadeAnimation 1s infinite alternate;
+    animation-play-state: paused;
+}
+
+#pick_border:hover{
+    animation-play-state: running;
+}
+
+#small_img_spider{
+    position: absolute;
+    top: 7px;
+    left: 18px
+}
+
+#small_icon_flash{
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -192px;
+}
+
+#small_icon_film{
+    position: absolute;
+    margin-left: -286px;
+    margin-top: 7px;
+}
+
 @keyframes portalmove {
     0% {
         left: -40px
@@ -73,25 +103,38 @@
 }
 
 .Movie_List_Title1{
-    display: inline-flex;
+    display: flex;
     position: absolute;
-    left: 73px;
+    left: 20px;
     top: 121px;
-    width: 150px;
-    height: 50px;
-
+    width: 304px;
+    height: 66px;
 }
+
+
 .Movie_List_Title1 p{
     flex: 1;
     color: white;
     font-family: 'Lucida Sans Typewriter';
     font-size: 14px;
     font-style: oblique;
-    text-align: center;
+    margin-left: 111px;
+    margin-top: 11px;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     opacity: 0.69;
-    animation: fadeAnimation 1s infinite alternate;
+}
+
+.Movie_List_Title1 p1{
+    flex: 1;
+    color: white;
+    margin-top: 36px;
+    margin-left: -142px;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    opacity: 0.69;
 }
 .Movie_Title p {
     flex: 1;
