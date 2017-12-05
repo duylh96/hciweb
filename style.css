@@ -36,12 +36,18 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: fadeAnimation 1s infinite alternate;
+    animation: fadeAnimation 1s infinite alternate ;
     animation-play-state: paused;
 }
 
 #pick_border:hover{
     animation-play-state: running;
+}
+
+#pick_border:not(:hover){
+   animation-play-state: paused;
+   opacity: 0;
+
 }
 
 #small_img_spider{
@@ -52,7 +58,7 @@
 
 #small_icon_flash{
     position: absolute;
-    margin-top: 33px;
+    margin-top: 35px;
     margin-left: -192px;
 }
 
@@ -119,7 +125,7 @@
     font-size: 14px;
     font-style: oblique;
     margin-left: 111px;
-    margin-top: 11px;
+    margin-top: 17px;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     opacity: 0.69;
@@ -128,7 +134,7 @@
 .Movie_List_Title1 p1{
     flex: 1;
     color: white;
-    margin-top: 36px;
+    margin-top: 38px;
     margin-left: -142px;
     font-family: 'Lucida Sans Typewriter';
     font-size: 12px;
