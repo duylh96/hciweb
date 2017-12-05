@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .body {
     margin: 0;
     padding: 0;
@@ -153,3 +154,247 @@
     margin: 0;
     margin-top: 10px;
 }
+=======
+.body {
+    margin: 0;
+    padding: 0;
+    width: 1366px;
+    height: 768px;
+    background-size: cover;
+    background-image: url('Images/background.png')
+}
+
+.centerInfo {
+    position: absolute;
+    top: 130px;
+    left: 500px;
+    background: transparent;
+}
+
+#bigImageBorder {
+    width: 100%;
+    height: 100%;
+}
+
+#bigImagePoster {
+    top: 8px;
+    left: 8px;
+    position: absolute;
+}
+
+#bigImagePortal {
+    position: absolute;
+    top: 114px;
+    left: -30px;
+    animation: portalmove 1.2s infinite;
+}
+
+#pick_border{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: fadeAnimation 1s infinite alternate;
+    animation-play-state: paused;
+}
+
+#pick_border:hover{
+    animation-play-state: running;
+}
+
+#small_img_spider{
+    position: absolute;
+    top: 7px;
+    left: 18px
+}
+
+#small_icon_flash{
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -192px;
+}
+
+#small_icon_film{
+    position: absolute;
+    margin-left: -286px;
+    margin-top: 7px;
+}
+
+@keyframes portalmove {
+    0% {
+        left: -40px
+    }
+    50% {
+        left: -28px
+    }
+    100% {
+        left: -40px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeAnimation {
+    0%   { opacity:0.4; }
+    25%   { opacity:0.6; }
+    50%  { opacity:0.8; }
+    100% { opacity:1; }
+  }
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+
+.Movie_Title {
+    display: inline-flex;
+    position: absolute;
+    left: 429px;
+    top: 12px;
+    width: 527px;
+    height: 67px;
+}
+
+.Movie_List_Title1{
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 121px;
+    width: 304px;
+    height: 66px;
+}
+
+
+.Movie_List_Title1 p{
+    flex: 1;
+    color: white;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 14px;
+    font-style: oblique;
+    margin-left: 111px;
+    margin-top: 11px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    opacity: 0.69;
+}
+
+.Movie_List_Title1 p1{
+    flex: 1;
+    color: white;
+    margin-top: 36px;
+    margin-left: -142px;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    opacity: 0.69;
+}
+.Movie_Title p {
+    flex: 1;
+    color: white;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.Reveel{
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+  font-family:'Lucida Sans Typewriter';
+  font-weight:300;
+  font-size:32px;
+  padding-top:40vh;
+  height:100vh;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+.First h1{
+	color: white;
+	font-weight:300;
+  	font-size:20px;
+	font-family:'Lucida Sans Typewriter';
+  	display:inline-block;
+  	overflow:hidden;
+  	white-space:nowrap;
+}
+
+.First p{
+	width: 200px;
+	height:20px;
+	color: white;
+	font-weight:300;
+  	font-size:15px;
+	font-family:'Lucida Sans Typewriter';
+  	display:inline-block;
+  	overflow:hidden;
+  	white-space:nowrap;
+}
+.First p1{
+	width: 500px;
+	height:20px;
+	color: white;
+	font-weight:300;
+  	font-size:15px;
+	font-family:'Lucida Sans Typewriter';
+}
+.Second{
+	color: white;
+	font-weight:300;
+  	font-size:20px;
+	font-family:'Lucida Sans Typewriter';
+  	display:inline-block;
+  	overflow:hidden;
+  	white-space:nowrap;
+}
+.First:first-of-type {    
+	  animation: showup 5s infinite;
+	}
+
+.Secondv:last-of-type {
+
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.Secondv:last-of-type span {
+
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+
+>>>>>>> f7c9f3900ae7e8d6df6204433e70da79029041c8
