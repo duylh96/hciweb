@@ -1,10 +1,15 @@
 .body {
-    margin: 0;
-    padding: 0;
-    width: 1366px;
-    height: 768px;
+    min-height: 100%;
+    min-width: 768px;
+    width: 100%;
+    height: auto;
+    margin-top: -12px;
+    margin-left: -8px;
     background-size: cover;
-    background-image: url('Images/background.png')
+    background-image: url('Images/background.png');
+    position: fixed;
+    overflow-x:hidden;
+  
 }
 
 .centerInfo {
