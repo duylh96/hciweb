@@ -36,12 +36,17 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: fadeAnimation 1s infinite alternate;
+    animation: fadeAnimation 1s ease-in alternate;
     animation-play-state: paused;
 }
 
 #pick_border:hover{
     animation-play-state: running;
+}
+
+#pick_border:not(:hover){
+   animation-play-state: paused;
+   opacity: 0;
 }
 
 #small_img_spider{
