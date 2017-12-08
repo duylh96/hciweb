@@ -9,6 +9,7 @@
     background-image: url('Images/background.png');
     position: fixed;
     overflow-x:hidden;
+    overflow-y: hidden;
   
 }
 
