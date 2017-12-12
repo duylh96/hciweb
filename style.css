@@ -35,7 +35,7 @@
     position: absolute;
     top: 114px;
     left: -30px;
-    animation: portalmove 1.2s infinite;
+    animation: portalmove 2s infinite;
 }
 
 #pick_border{
@@ -249,5 +249,3 @@
   margin-left:-355px;
   animation: slidein 7s infinite;
 }
-
-
