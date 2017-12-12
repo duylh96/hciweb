@@ -26,8 +26,8 @@
 }
 
 #bigImagePoster {
-    top: 8px;
-    left: 8px;
+    top: 6px;
+    left: 6px;
     position: absolute;
 }
 
@@ -146,7 +146,6 @@
     height: 66px;
 }
 
-
 .Movie_List_Title1 p{
     flex: 1;
     color: white;
@@ -248,4 +247,8 @@
 
   margin-left:-355px;
   animation: slidein 7s infinite;
+}
+
+.Movie_List_Title1:active, .Movie_tag:active{
+   
 }
