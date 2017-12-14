@@ -8,10 +8,15 @@
     <script src="animation.js"></script>
 
     <script type="text/javascript">
-        function ChangeImage(){
+        function ChangeDetial(){
             var image = document.getElementById("bigImagePoster");
-            image.src = "./Images/poster_annabelle.png"
-
+            image.src = "./Images/poster_annabelle.png";
+			var text = document.getElementById("year");
+			text.textContent= "Year Release: 2016."
+			var text = document.getElementById("studio");
+			text.textContent= "Studio: Warner Bros."
+			var text = document.getElementById("type");
+			text.textContent= "Type: Horror, Fiction.";
         }
     </script>
 </head>
@@ -26,7 +31,7 @@
             <img src="./Images/poster_spiderman.png" alt="portal" id="bigImagePoster">
             <img src="./Images/portal.png" alt="portal" id="bigImagePortal">
         </div>
-      <div class="Movie_List_Title1" onclick="ChangeImage();">          
+      <div class="Movie_List_Title1" onclick="ChangeDetial();">          
             <p>Spider-Man</p>
             <p1>Action</p1>
           <div clas="Movie_tag">
