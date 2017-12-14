@@ -126,6 +126,13 @@
     100% {opacity:0;width:355px;}
 }
 
+@keyframes reveal_detail {
+    0%  {transform: translate(100%,0);}
+    25% {transform: translate( 75%,0);}
+    50% {transform: translate( 50%,0);}
+    75% {transform: translate( 25%,0);}
+    100%{transform: translate(   0,0);}
+}
 
 
 .Movie_Title {
@@ -182,19 +189,9 @@
     margin-top: 10px;
 }
 
-.Reveel{
-  position:absolute;
-  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
-  color:#555;
-  font-family:'Lucida Sans Typewriter';
-  font-weight:300;
-  font-size:32px;
-  padding-top:40vh;
-  height:100vh;
-  overflow:hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
+.Detail{
+	display: block;
+  	-webkit-animation: reveal_detail .5s cubic-bezier(0.25, 0.25, 0.75, 0.75) ;
 }
 .Detail h1{
 	margin-top:100px;
