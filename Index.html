@@ -8,16 +8,41 @@
     <script src="animation.js"></script>
 
     <script type="text/javascript">
-        function ChangeDetial(){
-            	var image = document.getElementById("bigImagePoster");
-            	image.src = "./Images/poster_annabelle.png";
-	 	var text = document.getElementById("year");
-		text.textContent= "Year Release: 2016."
-		var text = document.getElementById("studio");
-		text.textContent= "Studio: Warner Bros."
-		var text = document.getElementById("type");
-		text.textContent= "Type: Horror, Fiction.";
+        function changeImage1(){
+            var image = document.getElementById("bigImagePoster");
+              image.src = "./Images/poster_annabelle.png";
+              var message = "Year release: 2014";
+        var msgCount = 0;
+        var timer1, timer2;
+        var messageLabel = document.getElementById("messageLabel");
+        
+        function textFunc() {
+           messageLabel.innerHTML = message.substring(0, msgCount);
+           
+           if (msgCount == message.length) {
+              // Stop Timer
+              clearInterval(timer1);
+              
+              // Start blinking animation!
+              
+           } else {
+              msgCount++;
+           }
         }
+        
+        timer1 = setInterval("textFunc()", 150); // Every 150 milliseconds
+        }
+       
+        // function ChangeDetial(){
+        //     	var image = document.getElementById("bigImagePoster");
+        //     	image.src = "./Images/poster_annabelle.png";
+	 	// var text = document.getElementById("year");
+		// text.textContent= "Year Release: 2016."
+		// var text = document.getElementById("studio");
+		// text.textContent= "Studio: Warner Bros."
+		// var text = document.getElementById("type");
+		// text.textContent= "Type: Horror, Fiction.";
+        // }
     </script>
 </head>
 
@@ -31,17 +56,25 @@
             <img src="./Images/poster_spiderman.png" alt="portal" id="bigImagePoster">
             <img src="./Images/portal.png" alt="portal" id="bigImagePortal">
         </div>
-      <div class="Movie_List_Title1" onclick="ChangeDetial();">          
+        <div class="Movie_List_Title1" onclick="changeImage1();">          
             <p>Spider-Man</p>
             <p1>Action</p1>
-          <div clas="Movie_tag">
-            <img src="./Images/icon_film.png" alt="smalliconfilm" id="small_icon_film">
-            <img src="./Images/small_img_spider.png" alt="smallimg_spider" id="small_img_spider" >
-            <img src="./Images/icon_flash.png" alt="smalliconflash" id="small_icon_flash">
-            <img src="./Images/pick_border.png" alt="pickborder" id="pick_border">
+          <div class="Movie_tag">
+            <img src="./Images/icon_film.png" alt="small_iconfilm" id="small_icon_film">
+            <img src="./Images/small_img_spider.png" alt="small_img_spider" id="small_img_spider" >
+            <img src="./Images/icon_flash.png" alt="small_icon_flash" id="small_icon_flash">
+            <img src="./Images/pick_border.png" alt="pick_border" id="pick_border">
           </div>
         </div>
-        <div class="Reveal" style="position:absolute;left:1100px;top:105px;width: 260px;height:500px">
+        <div class="Movie_List_Detail">
+            <p id="messageLabel">Year Realease: 2014</p>
+            <div class="Movie_List_Detail1">
+                <img src="./Images/img_detail_line1.png" alt="img_detail_line1" id="img_detail_line1">
+                <img src="./Images/img_detail_line2.png" alt="img_detail_line2" id="img_detail_line2">
+            </div>
+        </div>
+        
+        <!-- <div class="Reveal" style="position:absolute;left:1100px;top:105px;width: 260px;height:500px">
         	<div class="Detail"  id="detail">
 				<div class="First">
 					<h1>Movie Detail</h1>
@@ -60,7 +93,7 @@
 					<img src="./Images/line_bar.png" alt="taskbar" width="350" height="100" id="task4">
 					</p></div>	
 			</div>
-		</div>
+		</div> -->
 	</div>
 </body>
 
