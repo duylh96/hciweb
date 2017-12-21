@@ -188,9 +188,9 @@
     top: 121px;
     width: 304px;
     height: 66px;
-    /* border-style: solid;
+    border-style: solid;
     border-radius: 7px;
-    border-color: #97d6eb; */
+    border-color: #97d6eb;
 }
 
 .Movie_List_Title1 p{
@@ -367,6 +367,3 @@
 	left: -150px;
 } */
 
-.Movie_List_Title1:active, .Movie_tag:active{
-   
-}
