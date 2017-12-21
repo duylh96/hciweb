@@ -61,7 +61,19 @@
     left: 18px
 }
 
+#small_img_annabelle{
+    position: absolute;
+    top: 7px;
+    left: 18px
+}
+
 #small_icon_flash{
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -192px;
+}
+
+#small_icon_flash1{
     position: absolute;
     margin-top: 33px;
     margin-left: -192px;
@@ -73,6 +85,11 @@
     margin-top: 7px;
 }
 
+#small_icon_film1{
+    position: absolute;
+    margin-left: -286px;
+    margin-top: 7px;
+}
 #img_detail_line1{
     position: absolute;
     margin-top: 30px;
@@ -188,12 +205,36 @@
     top: 121px;
     width: 304px;
     height: 66px;
-    border-style: solid;
+    /* border-style: solid;
     border-radius: 7px;
-    border-color: #97d6eb;
+    border-color: #97d6eb; */
 }
 
+.Movie_List_Title2{
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 247px;
+    width: 304px;
+    height: 66px;
+
+}
+
+
 .Movie_List_Title1 p{
+    flex: 1;
+    color: white;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 14px;
+    font-style: oblique;
+    margin-left: 111px;
+    margin-top: 11px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    opacity: 0.69;
+}
+
+.Movie_List_Title2 p{
     flex: 1;
     color: white;
     font-family: 'Lucida Sans Typewriter';
@@ -217,6 +258,19 @@
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     opacity: 0.69;
 }
+
+.Movie_List_Title2 p1{
+    flex: 1;
+    color: white;
+    margin-top: 36px;
+    margin-left: -142px;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    opacity: 0.69;
+}
+
 .Movie_Title p {
     flex: 1;
     color: white;

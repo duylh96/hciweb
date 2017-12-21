@@ -8,6 +8,12 @@
     <script src="animation.js"></script>
 
     <script type="text/javascript">
+    
+        function changeImage(){
+            var image = document.getElementById("bigImagePoster");
+            image.src = "./Images/poster_spiderman.png";
+        }
+
         function changeImage1(){
             var image = document.getElementById("bigImagePoster");
             image.src = "./Images/poster_annabelle.png";
@@ -55,13 +61,24 @@
             <img src="./Images/poster_spiderman.png" alt="portal" id="bigImagePoster">
             <img src="./Images/portal.png" alt="portal" id="bigImagePortal">
         </div>
-        <div class="Movie_List_Title1" onclick="changeImage1();">          
+        <div class="Movie_List_Title1" onclick="changeImage();">          
             <p>Spider-Man</p>
             <p1>Action</p1>
           <div class="Movie_tag">
             <img src="./Images/icon_film.png" alt="small_iconfilm" id="small_icon_film">
             <img src="./Images/small_img_spider.png" alt="small_img_spider" id="small_img_spider" >
             <img src="./Images/icon_flash.png" alt="small_icon_flash" id="small_icon_flash">
+            <img src="./Images/pick_border.png" alt="pick_border" id="pick_border">
+          </div>
+        </div>
+        <!-- Item List 2 -->
+        <div class="Movie_List_Title2" onclick="changeImage1();">          
+            <p>Annabelle</p>
+            <p1>Honor</p1>
+          <div class="Movie_tag1">
+            <img src="./Images/icon_film.png" alt="small_iconfilm1" id="small_icon_film1">
+            <img src="./Images/small_img_annabelle.png" alt="small_img_annabelle" id="small_img_annabelle" >
+            <img src="./Images/icon_flash.png" alt="small_icon_flash1" id="small_icon_flash1">
             <img src="./Images/pick_border.png" alt="pick_border" id="pick_border">
           </div>
         </div>
