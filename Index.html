@@ -10,13 +10,14 @@
     <script type="text/javascript">
         function changeImage1(){
             var image = document.getElementById("bigImagePoster");
-              image.src = "./Images/poster_annabelle.png";
-              var message = "Year release: 2014";
-        var msgCount = 0;
-        var timer1, timer2;
-        var messageLabel = document.getElementById("messageLabel");
+            image.src = "./Images/poster_annabelle.png";
+        }
+            var message = "Year release: 2017";
+            var msgCount = 0;
+            var timer1;
+            var messageLabel = document.getElementById("messageLabel");
         
-        function textFunc() {
+        function textFunc(messageLabel,message) {
            messageLabel.innerHTML = message.substring(0, msgCount);
            
            if (msgCount == message.length) {
@@ -30,9 +31,7 @@
            }
         }
         
-        timer1 = setInterval("textFunc()", 150); // Every 150 milliseconds
-        }
-       
+        timer1 = setInterval("textFunc(messageLabel,message)", 150); // Every 150 milliseconds
         // function ChangeDetial(){
         //     	var image = document.getElementById("bigImagePoster");
         //     	image.src = "./Images/poster_annabelle.png";
@@ -67,11 +66,13 @@
           </div>
         </div>
         <div class="Movie_List_Detail">
-            <p id="messageLabel">Year Realease: 2014</p>
+            <p id="messageLabel">Year Realease: 2017</p>
             <div class="Movie_List_Detail1">
                 <img src="./Images/img_detail_line1.png" alt="img_detail_line1" id="img_detail_line1">
                 <img src="./Images/img_detail_line2.png" alt="img_detail_line2" id="img_detail_line2">
             </div>
+            <p1 id="messageLabel1">Company: Marvel</p1>
+            <p2 id="messageLabel2">Type: Fiction, Material Art</p2>
         </div>
         
         <!-- <div class="Reveal" style="position:absolute;left:1100px;top:105px;width: 260px;height:500px">
