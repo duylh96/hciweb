@@ -76,7 +76,7 @@
 #img_detail_line1{
     position: absolute;
     margin-top: 30px;
-    margin-left: -376px;
+    margin-left: -1px;
     animation: leftfadeIn;
     animation-duration: 0.7s;
 }
@@ -84,7 +84,7 @@
 #img_detail_line2{
     position: absolute;
     margin-top: 21px;
-    margin-left: -298px;
+    margin-left: 77px;
     animation: horizontalfadeIn;
     animation-duration: 0.7s;
 }
@@ -188,6 +188,9 @@
     top: 121px;
     width: 304px;
     height: 66px;
+    /* border-style: solid;
+    border-radius: 7px;
+    border-color: #97d6eb; */
 }
 
 .Movie_List_Title1 p{
@@ -274,10 +277,22 @@
     
 }
 
-.Movie_List_Detail p{
+.Movie_List_Detail1{
+    display: flex;
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 66px;
+    width: 400px;
+    height: 500px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    
+}
+
+.Movie_List_Detail1 p{
     color: white;
-    margin-top: 1px;
-    margin-left: 160px;
+    margin-top: 2px;
+    margin-left: 84px;
     font-weight: 300;
     font-size: 20px;
     font-family: 'Lucida Sans Typewriter';
@@ -287,7 +302,7 @@
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 2.5s steps(40, end),
+      typing 1.5s steps(40, end),
       blink-caret .75s step-end infinite;
     
 }
