@@ -1,0 +1,124 @@
+body {
+    padding-top: 110px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+.my-nav-header{
+    background-color: black;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-weight: 600;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: #e7e7e7;
+    color: black    
+}
+.logo {
+    font-weight: 600;
+}
+.logo:hover{
+    background-color: black;
+}
+.content{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.form-footer{
+    float: right
+}
+.resetpass{
+    margin-right: 10px;
+    margin-top: 12px;
+    display: inline-block;
+}
+.btn-block {
+    width: min-content;
+    float: right;
+}
+.btn-group-lg>.btn, .btn-lg {
+    border-radius: 30px;
+}
+.item-header{
+    padding-top: 28px;
+}
+.footer{
+    margin-top: -30px;
+    background-image: url('https://www.themoviedb.org/static_cache/v4//footers_v2/Jaws-0738d22d1f7eb26437e4f410d42ce2239b34688ad972da1155989e0a9de121ac.jpg');  
+    height: 450px;
+    padding: 0;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.footer nav{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: .9em;
+}
+.footer nav div.join {
+    width: 230px;
+    text-align: right;
+    position: relative;
+    top: -36px;
+    right: 0;
+}
+.footer nav div {
+    display: block;
+    margin-right: 50px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+.footer nav a.rounded {
+    position: relative;
+    top: 15px;
+    border-color: #fff;
+    background-color: #fff;
+    color: #01d277;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+    text-decoration: none;
+}
+.rounded {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: linear .1s;
+}
+.footer nav h3 {
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+}
+h3 {
+    margin: 0 0 4px 0;
+}
+ul {
+    list-style-type: none;
+    line-height: 1.4em;
+    margin-left: -40px;
+}
+.footer nav ul li {
+    line-height: 1.6em;
+    max-width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+.footer nav ul li a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.footer nav a {
+    color: #fff;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Movie World</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top my-nav-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html" class="logo">
+                            <img src="logo.png" width="91" height="81">
+                        </a>
+                    </li>
+                    <li class="item-header">
+                        <a href="#">Discover</a>
+                    </li>
+                    <li class="item-header">
+                        <a href="#">Movies</a>
+                    </li>
+                    <li class="item-header">
+                        <a href="#">People</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active item-header">
+                        <a href="#">Login</a>
+                    </li>
+                    <li class="item-header">
+                        <a href="#">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="container">
+            <div class="media">
+                <section class="main_content content">
+                    <h2>
+                        <b> Login to your account</b>
+                    </h2>
+                    <p>In order to use the editing and rating capabilities of TMDb, as well as get personal recommendations
+                        you will need to login to your account. If you do not have an account, registering for an account
+                        is free and simple.
+                        <a href="#">Click here</a> to get started.</p>
+
+                    <p>If you signed up but didn't get your verification email,
+                        <a href="#">click here</a> to have it resent.</p>
+
+
+
+                    <form class="form-signin">
+                        <label for="inputEmail">Username (case sensitive)</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        <label for="inputPassword">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <div class="form-footer">
+                            <a class="resetpass" href="#">Reset password?</a>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!--footer-->
+    <footer class="footer">
+        <nav>
+            <div class="join">
+                <img src="logo.png" width="130"
+                    height="116">
+                <a class="rounded" href="#">Join the Community</a>
+            </div>
+
+            <div>
+                <h3>The Basics</h3>
+                <ul>
+                    <li>
+                        <a href="/about">About TMDb</a>
+                    </li>
+                    <li>
+                        <a href="/about/staying-in-touch">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="/talk">Support Forums</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/api">API</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.themoviedb.org/" target="_blank" rel="noopener">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/documentation/editing">Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Get Involved</h3>
+                <ul>
+                    <li>
+                        <a href="/bible">
+                            <span class="glyphicons glyphicons-asterisk"></span> Contribution Bible</a>
+                    </li>
+                    <li>
+                        <a href="/apps">3rd Party Applications</a>
+                    </li>
+                    <li>
+                        <a href="/movie/new">Add New Movie</a>
+                    </li>
+                    <li>
+                        <a href="/tv/new">Add New TV Show</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Community</h3>
+                <ul>
+                    <li>
+                        <a href="/documentation/community/guidelines">Guidelines</a>
+                    </li>
+                    <li>
+                        <a href="/leaderboard">Leaderboard</a>
+                    </li>
+                    <li>
+                        <a href="/discuss">Forums</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/themoviedb" target="_blank" rel="noopener">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/themoviedb" target="_blank" rel="noopener">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+TheMovieDBorgTMDb" target="_blank" rel="noopener">Google+</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li>
+                        <a href="/documentation/website/terms-of-use">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
