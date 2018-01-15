@@ -11,22 +11,41 @@
     
         function changeImage(){
             var image = document.getElementById("bigImagePoster");
+           // var title = document.getElementById("title");
             image.src = "./Images/poster_spiderman.png";
+            var str = document.getElementById("Title").innerHTML; 
+            var res = "Spider-Man HomeComing";
+            document.getElementById("Title").innerHTML = res;
+            
         }
 
         function changeImage1(){
             var image = document.getElementById("bigImagePoster");
             image.src = "./Images/poster_annabelle.png";
+            var str = document.getElementById("Title").innerHTML; 
+            var res = "Annabelle";
+            document.getElementById("Title").innerHTML = res;
+
         }
 
         function changeImage2(){
             var image = document.getElementById("bigImagePoster");
             image.src = "./Images/poster_avatar.png";
+            var str = document.getElementById("Title").innerHTML; 
+            var res = "Avatar";
+            document.getElementById("Title").innerHTML = res;
         }
 
         function changeImage3(){
             var image = document.getElementById("bigImagePoster");
             image.src = "./Images/poster_gods_egypt.png";
+            var str = document.getElementById("Title").innerHTML; 
+            var res = "Gold of egypt";
+            document.getElementById("Title").innerHTML = res;
+        }
+
+        function PlayVideo(){
+         
         }
             var message = "Year release: 2017";
             var msgCount = 0;
@@ -64,11 +83,11 @@
 <body>
     <div class="body">
         <div class="Movie_Title">
-            <p>Spider-Man HomeComing</p>
+            <p id="Title" onclick="changeImage();">Spider-Man HomeComing</p>
         </div>
         <div class="centerInfo">
             <img src="./Images/poster_border.png" alt="BigPoster" id="bigImageBorder">
-            <img src="./Images/poster_spiderman.png" alt="portal" id="bigImagePoster">
+            <img src="./Images/poster_spiderman.png" alt="portal" id="bigImagePoster" onclick="PlayVideo">
             <img src="./Images/portal.png" alt="portal" id="bigImagePortal">
         </div>
         <div class="Movie_List_Title1" onclick="changeImage();">          
