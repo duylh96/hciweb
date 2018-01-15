@@ -325,22 +325,40 @@
     display: flex;
     position: absolute;
     top: 135px;
-    left: 861px;
-    width: 500px;
-    height: 300px;
-    
+    left: 894px;
+    width: 450px;
+    height: 500px;
+    border-style: solid;
+    border-color: blanchedalmond;
 }
 
 .Movie_List_Detail1{
     display: flex;
     position: absolute;
     margin-top: -4px;
-    margin-left: 66px;
+    margin-left: 31px;
     width: 400px;
-    height: 500px;
-    border-style: solid;
-    border-color: blanchedalmond;
+    height: 128px;
+
     
+}
+
+.Movie_List_Detail2{
+    display: flex;
+    position: absolute;
+    margin-top: 79px;
+    margin-left: 48px;
+    width: 400px;
+    height: 128px;
+}
+
+.Movie_List_Detail3{
+    display: flex;
+    position: absolute;
+    margin-top: 168px;
+    margin-left: 39px;
+    width: 400px;
+    height: 128px;
 }
 
 .Movie_List_Detail1 p{
@@ -361,10 +379,10 @@
     
 }
 
-.Movie_List_Detail p1{
+.Movie_List_Detail2 p{
     color: white;
-    margin-top: 105px;
-    margin-left: -292px;
+    margin-top: 1px;
+    margin-left: 91px;
     font-weight: 300;
     font-size: 20px;
     font-family: 'Lucida Sans Typewriter';
@@ -380,14 +398,14 @@
     
 }
 
-.Movie_List_Detail p2{
+.Movie_List_Detail3 p{
     color: white;
-    margin-top: 247px;
-    margin-left: -292px;
+    margin-top: 1px;
+    margin-left: 63px;
     font-weight: 300;
     font-size: 16px;
     font-family: 'Lucida Sans Typewriter';
-    /* animation-delay: 3s; */
+    /* animation-delay: 2s; */
     overflow: hidden; /* Ensures the content is not revealed until the animation */
      /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
