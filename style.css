@@ -202,7 +202,7 @@
     display: flex;
     position: absolute;
     left: 20px;
-    top: 121px;
+    top: 127px;
     width: 304px;
     height: 66px;
     /* border-style: solid;
@@ -214,12 +214,41 @@
     display: flex;
     position: absolute;
     left: 20px;
-    top: 247px;
+    top: 241px;
+    width: 304px;
+    height: 66px;
+}
+
+.Movie_List_Title3{
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 351px;
+    width: 304px;
+    height: 66px;
+}
+
+.Movie_List_Title4{
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 464px;
     width: 304px;
     height: 66px;
 
 }
 
+.Movie_Title p {
+    flex: 1;
+    color: white;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+}
 
 .Movie_List_Title1 p{
     flex: 1;
@@ -271,17 +300,57 @@
     opacity: 0.69;
 }
 
-.Movie_Title p {
+.Movie_List_Title3 p1{
+    flex: 1;
+    color: white;
+    margin-top: 36px;
+    margin-left: -142px;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    opacity: 0.69;
+}
+
+.Movie_List_Title3 p{
     flex: 1;
     color: white;
     font-family: 'Lucida Sans Typewriter';
-    font-size: 35px;
-    font-style: italic;
-    text-align: center;
-    align-items: center;
-    margin: 0;
-    margin-top: 10px;
+    font-size: 14px;
+    font-style: oblique;
+    margin-left: 111px;
+    margin-top: 11px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    opacity: 0.69;
 }
+
+.Movie_List_Title4 p1{
+    flex: 1;
+    color: white;
+    margin-top: 36px;
+    margin-left: -142px;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    opacity: 0.69;
+}
+
+.Movie_List_Title4 p{
+    flex: 1;
+    color: white;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 14px;
+    font-style: oblique;
+    margin-left: 111px;
+    margin-top: 11px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    opacity: 0.69;
+}
+
+
 /* 
 .Detail{
 	display: block;
@@ -328,8 +397,7 @@
     left: 894px;
     width: 450px;
     height: 500px;
-    border-style: solid;
-    border-color: blanchedalmond;
+  
 }
 
 .Movie_List_Detail1{

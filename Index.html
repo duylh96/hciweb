@@ -18,6 +18,16 @@
             var image = document.getElementById("bigImagePoster");
             image.src = "./Images/poster_annabelle.png";
         }
+
+        function changeImage2(){
+            var image = document.getElementById("bigImagePoster");
+            image.src = "./Images/poster_avatar.png";
+        }
+
+        function changeImage3(){
+            var image = document.getElementById("bigImagePoster");
+            image.src = "./Images/poster_gods_egypt.png";
+        }
             var message = "Year release: 2017";
             var msgCount = 0;
             var timer1;
@@ -78,10 +88,32 @@
           <div class="Movie_tag1">
             <img src="./Images/icon_film.png" alt="small_iconfilm1" id="small_icon_film1">
             <img src="./Images/small_img_annabelle.png" alt="small_img_annabelle" id="small_img_annabelle" >
-            <img src="./Images/icon_flash.png" alt="small_icon_flash1" id="small_icon_flash1">
+            <img src="./Images/icon_honor.png" alt="small_icon_flash1" id="small_icon_flash1">
             <img src="./Images/pick_border.png" alt="pick_border" id="pick_border">
           </div>
         </div>
+        <div class="Movie_List_Title3" onclick="changeImage2();">          
+            <p>Avatar</p>
+            <p1>Fiction</p1>
+          <div class="Movie_tag2">
+            <img src="./Images/icon_film.png" alt="small_iconfilm1" id="small_icon_film1">
+            <img src="./Images/small_img_avatar.png" alt="small_img_annabelle" id="small_img_annabelle" >
+            <img src="./Images/icon_people.png" alt="small_icon_flash1" id="small_icon_flash1">
+            <img src="./Images/pick_border.png" alt="pick_border" id="pick_border">
+          </div>
+        </div>
+        <div class="Movie_List_Title4" onclick="changeImage3();">          
+            <p>Gods of Gypt</p>
+            <p1>Epic</p1>
+          <div class="Movie_tag2">
+            <img src="./Images/icon_film.png" alt="small_iconfilm1" id="small_icon_film1">
+            <img src="./Images/small_img_gods_egypt.png" alt="small_img_annabelle" id="small_img_annabelle" >
+            <img src="./Images/icon_smite.png" alt="small_icon_flash1" id="small_icon_flash1">
+            <img src="./Images/pick_border.png" alt="pick_border" id="pick_border">
+          </div>
+        </div>
+
+
         <div class="Movie_List_Detail">
             
             <div class="Movie_List_Detail1">
@@ -100,6 +132,7 @@
                 <img src="./Images/img_detail_line2.png" alt="img_detail_line2" id="img_detail_line2">
             </div>
         </div>
+        
         
         <!-- <div class="Reveal" style="position:absolute;left:1100px;top:105px;width: 260px;height:500px">
         	<div class="Detail"  id="detail">
