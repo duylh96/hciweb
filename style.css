@@ -20,6 +20,19 @@
     background: transparent;
 }
 
+.Slide_Button{
+    position: absolute;
+    top: 73px;
+    left: 678px;
+    background: transparent;
+}
+
+#Describe{
+    position: absolute;
+    margin-top: -598px;
+    margin-left: 456px;
+}
+
 #bigImageBorder {
     width: 100%;
     height: 100%;
@@ -42,6 +55,8 @@
     left: -30px;
     animation: portalmove 2s infinite;
 }
+
+
 
 #pick_border{
     position: absolute;

@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <title>World Movie</title>
     <script src="animation.js"></script>
-
     <script type="text/javascript">
     
         function changeImage(){
@@ -21,7 +20,6 @@
             Type();
             
         }
-
         function changeImage1(){
             var image = document.getElementById("bigImagePoster");
             image.src = "./Images/poster_annabelle.png";
@@ -29,9 +27,7 @@
             var res = "Annabelle";
             document.getElementById("Title").innerHTML = res;
             Type1();
-
         }
-
         function changeImage2(){
             var image = document.getElementById("bigImagePoster");
             image.src = "./Images/poster_avatar.png";
@@ -40,7 +36,6 @@
             document.getElementById("Title").innerHTML = res;
             Type2();
         }
-
         function changeImage3(){
             var image = document.getElementById("bigImagePoster");
             image.src = "./Images/poster_gods_egypt.png";
@@ -49,7 +44,6 @@
             document.getElementById("Title").innerHTML = res;
             Type3();
         }
-
         function PlayVideo(){
          
         }
@@ -131,7 +125,6 @@
                 }
             }
         }
-
         function Type2()
         {
             var message = "Year release: 2009";
@@ -216,6 +209,20 @@
               msgCount+=1;
            }
         }
+        function Move()
+        {
+            var elem = document.getElementById("Describe");   
+            var pos = 0;
+            var id = setInterval(frame, 5);
+            function frame() {
+                if (pos == 678) {
+                clearInterval(id);
+                } else {
+                pos++; 
+                elem.style.top = pos + 'px'; 
+                }
+  }
+        }
         
         timer1 = setInterval("textFunc(messageLabel,message)", 150); // Every 150 milliseconds
         var video = document.getElementById('spider_man_video');
@@ -239,7 +246,16 @@
     <div class="body">
         <div class="Movie_Title">
             <p id="Title" onclick="changeImage();">Spider-Man HomeComing</p>
+            
         </div>
+        <div class="Decribe_Film">
+            <img src="./Images/Describe_Bar.png" alt="describe" id="Describe">
+        </div>
+        
+        <div class="Slide_Button">
+             <img src="./Images/SlideButtonDown.png" alt="slide button" id="SlideButton" onclick="Move();">
+        </div>
+     
         <div class="centerInfo">
             <img src="./Images/poster_border.png" alt="BigPoster" id="bigImageBorder">
             <img src="./Images/poster_spiderman.png" alt="portal" id="bigImagePoster" onclick="PlayVideo">
