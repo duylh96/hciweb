@@ -16,6 +16,9 @@
             var str = document.getElementById("Title").innerHTML; 
             var res = "Spider-Man HomeComing";
             document.getElementById("Title").innerHTML = res;
+            var message = "Year release: 2018";
+            var messageLabel = document.getElementById("messageLabel");
+            Type();
             
         }
 
@@ -25,6 +28,7 @@
             var str = document.getElementById("Title").innerHTML; 
             var res = "Annabelle";
             document.getElementById("Title").innerHTML = res;
+            Type1();
 
         }
 
@@ -34,6 +38,7 @@
             var str = document.getElementById("Title").innerHTML; 
             var res = "Avatar";
             document.getElementById("Title").innerHTML = res;
+            Type2();
         }
 
         function changeImage3(){
@@ -42,6 +47,7 @@
             var str = document.getElementById("Title").innerHTML; 
             var res = "Gold of egypt";
             document.getElementById("Title").innerHTML = res;
+            Type3();
         }
 
         function PlayVideo(){
@@ -51,22 +57,171 @@
             var msgCount = 0;
             var timer1;
             var messageLabel = document.getElementById("messageLabel");
-        
+            function Type()
+        {
+            var message = "Year release: 2017";
+            var messageLabel = document.getElementById("messageLabel");
+            messageLabel.innerHTML = message.substring(0, msgCount); 
+            var msgCount = 0;
+            function textFunc(messageLabel,message) {
+                if (msgCount == message.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount+=1;
+                }
+            }
+            
+            var message1="Company: Marvel";
+            var messageLabel1 = document.getElementById("messageLabel1");
+            messageLabel1.innerHTML = message1.substring(0, msgCount1); 
+            var msgCount1 = 0;
+            function textFunc(messageLabel1,message1) {
+                if (msgCount1 == message1.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount1+=1;
+                }
+            }
+            var message2="Type: Fiction, Material Art";
+            var messageLabel2 = document.getElementById("messageLabel2");
+            messageLabel2.innerHTML = message2.substring(0, msgCount2); 
+            var msgCount2 = 0;
+            function textFunc(messageLabel2,message2) {
+                if (msgCount2 == message2.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount2+=1;
+                }
+            }
+        }
+        function Type1()
+        {
+            var message = "Year release: 2017";
+            var messageLabel = document.getElementById("messageLabel");
+            messageLabel.innerHTML = message.substring(0, msgCount); 
+            var msgCount = 0;
+            function textFunc(messageLabel,message) {
+                if (msgCount == message.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount+=1;
+                }
+            }
+            
+            var message1="Company: James Wan";
+            var messageLabel1 = document.getElementById("messageLabel1");
+            messageLabel1.innerHTML = message1.substring(0, msgCount1); 
+            var msgCount1 = 0;
+            function textFunc(messageLabel1,message1) {
+                if (msgCount1 == message1.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount1+=1;
+                }
+            }
+            var message2="Type: Horror";
+            var messageLabel2 = document.getElementById("messageLabel2");
+            messageLabel2.innerHTML = message2.substring(0, msgCount2); 
+            var msgCount2 = 0;
+            function textFunc(messageLabel2,message2) {
+                if (msgCount2 == message2.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount2+=1;
+                }
+            }
+        }
+
+        function Type2()
+        {
+            var message = "Year release: 2009";
+            var messageLabel = document.getElementById("messageLabel");
+            messageLabel.innerHTML = message.substring(0, msgCount); 
+            var msgCount = 0;
+            function textFunc(messageLabel,message) {
+                if (msgCount == message.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount+=1;
+                }
+            }
+            
+            var message1="Director: James Cameron";
+            var messageLabel1 = document.getElementById("messageLabel1");
+            messageLabel1.innerHTML = message1.substring(0, msgCount1); 
+            var msgCount1 = 0;
+            function textFunc(messageLabel1,message1) {
+                if (msgCount1 == message1.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount1+=1;
+                }
+            }
+            var message2="Type: Science Fiction";
+            var messageLabel2 = document.getElementById("messageLabel2");
+            messageLabel2.innerHTML = message2.substring(0, msgCount2); 
+            var msgCount2 = 0;
+            function textFunc(messageLabel2,message2) {
+                if (msgCount2 == message2.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount2+=1;
+                }
+            }
+        }
+        function Type3()
+        {
+            var message = "Year release: 2016";
+            var messageLabel = document.getElementById("messageLabel");
+            messageLabel.innerHTML = message.substring(0, msgCount); 
+            var msgCount = 0;
+            function textFunc(messageLabel,message) {
+                if (msgCount == message.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount+=1;
+                }
+            }
+            
+            var message1="Director: Alex Proyas";
+            var messageLabel1 = document.getElementById("messageLabel1");
+            messageLabel1.innerHTML = message1.substring(0, msgCount1); 
+            var msgCount1 = 0;
+            function textFunc(messageLabel1,message1) {
+                if (msgCount1 == message1.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount1+=1;
+                }
+            }
+            var message2="Type: Action, Adventure";
+            var messageLabel2 = document.getElementById("messageLabel2");
+            messageLabel2.innerHTML = message2.substring(0, msgCount2); 
+            var msgCount2 = 0;
+            function textFunc(messageLabel2,message2) {
+                if (msgCount2 == message2.length) {
+                   clearInterval(10);
+                } else {
+                   msgCount2+=1;
+                }
+            }
+        }
         function textFunc(messageLabel,message) {
            messageLabel.innerHTML = message.substring(0, msgCount);
-           
+            var pos = 0;
+            var id = setInterval(frame, 10);
            if (msgCount == message.length) {
-              // Stop Timer
               clearInterval(timer1);
-              
-              // Start blinking animation!
-              
            } else {
-              msgCount++;
+              msgCount+=1;
            }
         }
         
         timer1 = setInterval("textFunc(messageLabel,message)", 150); // Every 150 milliseconds
+        var video = document.getElementById('spider_man_video');
+                video.addEventListener('click',function(){
+                video.play();
+            },false);
         // function ChangeDetial(){
         //     	var image = document.getElementById("bigImagePoster");
         //     	image.src = "./Images/poster_annabelle.png";
@@ -123,7 +278,7 @@
         </div>
         <div class="Movie_List_Title4" onclick="changeImage3();">          
             <p>Gods of Gypt</p>
-            <p1>Epic</p1>
+            <p1>Adventure</p1>
           <div class="Movie_tag2">
             <img src="./Images/icon_film.png" alt="small_iconfilm1" id="small_icon_film1">
             <img src="./Images/small_img_gods_egypt.png" alt="small_img_annabelle" id="small_img_annabelle" >
@@ -141,13 +296,13 @@
                 <img src="./Images/img_detail_line2.png" alt="img_detail_line2" id="img_detail_line2">
             </div>
             <div class="Movie_List_Detail2">
-                <p>Company: Marvel</p>
+                <p id="messageLabel1">Company: Marvel</p>
                 <img src="./Images/img_detail_line1.png" alt="img_detail_line1" id="img_detail_line1">
                 <img src="./Images/img_detail_line2.png" alt="img_detail_line2" id="img_detail_line2">
             </div>
             <div class="Movie_List_Detail3">
-                <p>Type: Fiction, Material Art</p>
-                <img src="./Images/img_detail_line1.png" alt="img_detail_line1" id="img_detail_line1">
+                <p id="messageLabel2">Type: Fiction, Material Art</p>
+                <img src="./Images/img_detail_line3.png" alt="img_detail_line3" id="img_detail_line3">
                 <img src="./Images/img_detail_line2.png" alt="img_detail_line2" id="img_detail_line2">
             </div>
         </div>

@@ -30,6 +30,11 @@
     left: 6px;
     position: absolute;
 }
+#spider_man_video{
+    top: 6px;
+    left: 6px;
+    position: absolute;
+}
 
 #bigImagePortal {
     position: absolute;
@@ -106,6 +111,14 @@
     animation-duration: 0.7s;
 }
 
+#img_detail_line3{
+    position: absolute;
+    margin-top: 28px;
+    margin-left: -24px;
+    animation: leftfadeIn;
+    animation-duration: 0.7s;
+}
+
 @keyframes portalmove {
     0% {
         left: -40px
@@ -149,7 +162,7 @@
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 60% }
+    to { width: 90% }
 }
   
   /* The typewriter cursor effect */
@@ -393,8 +406,8 @@
 .Movie_List_Detail{
     display: flex;
     position: absolute;
-    top: 135px;
-    left: 894px;
+    top: 195px;
+    left: 918px;
     width: 450px;
     height: 500px;
   
@@ -415,7 +428,7 @@
     display: flex;
     position: absolute;
     margin-top: 79px;
-    margin-left: 48px;
+    margin-left: 28px;
     width: 400px;
     height: 128px;
 }
@@ -423,8 +436,8 @@
 .Movie_List_Detail3{
     display: flex;
     position: absolute;
-    margin-top: 168px;
-    margin-left: 39px;
+    margin-top: 180px;
+    margin-left: 21px;
     width: 400px;
     height: 128px;
 }
@@ -442,7 +455,7 @@
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 1.5s steps(40, end),
+      typing 2.5s steps(40, end) infinite,
       blink-caret .75s step-end infinite;
     
 }
@@ -452,7 +465,7 @@
     margin-top: 1px;
     margin-left: 91px;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Lucida Sans Typewriter';
     /* animation-delay: 2s; */
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -461,7 +474,7 @@
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 2.5s steps(40, end),
+      typing 2.5s steps(40, end) infinite,
       blink-caret .75s step-end infinite;
     
 }
@@ -469,7 +482,7 @@
 .Movie_List_Detail3 p{
     color: white;
     margin-top: 1px;
-    margin-left: 63px;
+    margin-left: 81px;
     font-weight: 300;
     font-size: 16px;
     font-family: 'Lucida Sans Typewriter';
@@ -480,7 +493,7 @@
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 2.5s steps(40, end),
+      typing 2.5s steps(40, end) infinite,
       blink-caret .75s step-end infinite;
     
 }
