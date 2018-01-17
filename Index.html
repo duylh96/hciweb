@@ -7,7 +7,7 @@
     <title>World Movie</title>
     <script src="animation.js"></script>
     <script type="text/javascript">
-    
+     var movesucess=false;
         function changeImage(){
             var image = document.getElementById("bigImagePoster");
            // var title = document.getElementById("title");
@@ -17,15 +17,20 @@
             document.getElementById("Title").innerHTML = res;
             var message = "Year release: 2018";
             var messageLabel = document.getElementById("messageLabel");
+            var image1 = document.getElementById("Describe");
+            image1.src = "./Images/Describe_Bar.png";
             Type();
             
         }
+
         function changeImage1(){
             var image = document.getElementById("bigImagePoster");
             image.src = "./Images/poster_annabelle.png";
             var str = document.getElementById("Title").innerHTML; 
             var res = "Annabelle";
             document.getElementById("Title").innerHTML = res;
+            var image1 = document.getElementById("Describe");
+            image1.src = "./Images/Describe_Bar_Annabelle.png";
             Type1();
         }
         function changeImage2(){
@@ -34,6 +39,8 @@
             var str = document.getElementById("Title").innerHTML; 
             var res = "Avatar";
             document.getElementById("Title").innerHTML = res;
+            var image1 = document.getElementById("Describe");
+            image1.src = "./Images/Describe_Bar_Avatar.png";
             Type2();
         }
         function changeImage3(){
@@ -42,6 +49,8 @@
             var str = document.getElementById("Title").innerHTML; 
             var res = "Gold of egypt";
             document.getElementById("Title").innerHTML = res;
+            var image1 = document.getElementById("Describe");
+            image1.src = "./Images/Describe_Bar_GodsofEgypt.png";
             Type3();
         }
         function PlayVideo(){
@@ -209,20 +218,49 @@
               msgCount+=1;
            }
         }
+
+        function frame1()
+        {
+            var elem1= document.getElementById("Slide_Up_Button");  
+            var pos1 = 0;
+            var id1 = setInterval(frame, 5);
+            function frame1() {
+                if (pos1 == 900) {
+                   clearInterval(id1);
+                } else {
+                    pos1++; 
+                    elem1.style.top = pos1 + 'px'; 
+                }
+             }
+        }
         function Move()
         {
-            var elem = document.getElementById("Describe");   
+            var elem = document.getElementById("Describe");  
+            var elem1= document.getElementById("Slide_Up_Button");  
+            elem.style="display: true";
+            elem1.style="display: true";
             var pos = 0;
             var id = setInterval(frame, 5);
             function frame() {
                 if (pos == 678) {
-                clearInterval(id);
+                   // elem1.style.top+=50;
+                   clearInterval(id);
+                   
                 } else {
-                pos++; 
-                elem.style.top = pos + 'px'; 
+                    pos++; 
+                    elem.style.top = pos + 'px'; 
+                    elem1.style.top = 1.795*pos + 'px'; 
                 }
-  }
+            }
         }
+        function MoveUp()
+        {
+            var elem = document.getElementById("Describe");  
+            var elem1= document.getElementById("Slide_Up_Button");  
+           elem.style.visibility='hidden';
+           elem1.style.visibility='hidden';
+        }
+       
         
         timer1 = setInterval("textFunc(messageLabel,message)", 150); // Every 150 milliseconds
         var video = document.getElementById('spider_man_video');
@@ -246,10 +284,6 @@
     <div class="body">
         <div class="Movie_Title">
             <p id="Title" onclick="changeImage();">Spider-Man HomeComing</p>
-            
-        </div>
-        <div class="Decribe_Film">
-            <img src="./Images/Describe_Bar.png" alt="describe" id="Describe">
         </div>
         
         <div class="Slide_Button">
@@ -293,7 +327,7 @@
           </div>
         </div>
         <div class="Movie_List_Title4" onclick="changeImage3();">          
-            <p>Gods of Gypt</p>
+            <p>Gods of Egypt</p>
             <p1>Adventure</p1>
           <div class="Movie_tag2">
             <img src="./Images/icon_film.png" alt="small_iconfilm1" id="small_icon_film1">
@@ -305,7 +339,6 @@
 
 
         <div class="Movie_List_Detail">
-            
             <div class="Movie_List_Detail1">
                 <p id="messageLabel">Year Realease: 2017</p>
                 <img src="./Images/img_detail_line1.png" alt="img_detail_line1" id="img_detail_line1">
@@ -322,7 +355,12 @@
                 <img src="./Images/img_detail_line2.png" alt="img_detail_line2" id="img_detail_line2">
             </div>
         </div>
-        
+
+        <div class="Decribe_Film">
+            <img src="./Images/Describe_Bar.png" alt="describe" id="Describe">
+            <img src="./Images/SlideButtonUp.png" alt="slidebuttondown" id="Slide_Up_Button" onclick="MoveUp();">
+       
+        </div>
         
         <!-- <div class="Reveal" style="position:absolute;left:1100px;top:105px;width: 260px;height:500px">
         	<div class="Detail"  id="detail">

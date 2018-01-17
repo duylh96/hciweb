@@ -16,7 +16,7 @@
 .centerInfo {
     position: absolute;
     top: 130px;
-    left: 500px;
+    left: 475px;
     background: transparent;
 }
 
@@ -30,7 +30,13 @@
 #Describe{
     position: absolute;
     margin-top: -598px;
-    margin-left: 456px;
+    margin-left: 430px;
+}
+
+#Slide_Up_Button{
+    position: absolute;
+    margin-top:-620px;
+    left:678px;
 }
 
 #bigImageBorder {
@@ -224,6 +230,11 @@
     top: 12px;
     width: 527px;
     height: 67px;
+}
+
+.SlideButtonDown{
+    position: absolute;
+    top: 127px;
 }
 
 .Movie_List_Title1{
@@ -422,7 +433,7 @@
     display: flex;
     position: absolute;
     top: 195px;
-    left: 918px;
+    left: 894px;
     width: 450px;
     height: 500px;
   
