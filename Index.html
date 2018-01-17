@@ -31,6 +31,7 @@
             document.getElementById("Title").innerHTML = res;
             var image1 = document.getElementById("Describe");
             image1.src = "./Images/Describe_Bar_Annabelle.png";
+
             Type1();
         }
         function changeImage2(){
@@ -253,20 +254,46 @@
                 }
             }
         }
-        function MoveUp()
-        {
+        function MoveUp(){
             var elem = document.getElementById("Describe");  
             var elem1= document.getElementById("Slide_Up_Button");  
            elem.style.visibility='hidden';
            elem1.style.visibility='hidden';
         }
-       
-        
-        timer1 = setInterval("textFunc(messageLabel,message)", 150); // Every 150 milliseconds
-        var video = document.getElementById('spider_man_video');
-                video.addEventListener('click',function(){
-                video.play();
-            },false);
+
+        function PlayVideo(){
+           
+            var video = document.getElementById("spider_man_video");
+            var elemv = document.getElementById("Black");  
+            elemv.style="display: true";
+            elemv.style="opacity: 0.8";
+            video.style="display: true";
+            var video = document.getElementById("spider_man_video");
+            video.addEventListener('click',function(){
+                video().play();
+                },false);
+            video.play();
+            video.show();
+            
+        }
+
+        function Exit(){
+            var video = document.getElementById("spider_man_video");
+            var elemv = document.getElementById("Black");  
+            video.style="display: none";
+            video.pause();
+            elemv.style="opacity: 0";
+            location.reload();
+            
+            
+        }
+        document.onkeypress = function(evt) {
+            evt = evt || window.event;
+            var charCode = evt.keyCode || evt.which;
+            var charStr = String.fromCharCode(charCode);
+            if(charCode=='z') video.pause();
+            alert(charStr);
+        };
         // function ChangeDetial(){
         //     	var image = document.getElementById("bigImagePoster");
         //     	image.src = "./Images/poster_annabelle.png";
@@ -292,7 +319,7 @@
      
         <div class="centerInfo">
             <img src="./Images/poster_border.png" alt="BigPoster" id="bigImageBorder">
-            <img src="./Images/poster_spiderman.png" alt="portal" id="bigImagePoster" onclick="PlayVideo">
+            <img src="./Images/poster_spiderman.png" alt="portal" id="bigImagePoster" onclick="PlayVideo();">
             <img src="./Images/portal.png" alt="portal" id="bigImagePortal">
         </div>
         <div class="Movie_List_Title1" onclick="changeImage();">          
@@ -355,11 +382,16 @@
                 <img src="./Images/img_detail_line2.png" alt="img_detail_line2" id="img_detail_line2">
             </div>
         </div>
-
+        
+        </video> 
         <div class="Decribe_Film">
             <img src="./Images/Describe_Bar.png" alt="describe" id="Describe">
             <img src="./Images/SlideButtonUp.png" alt="slidebuttondown" id="Slide_Up_Button" onclick="MoveUp();">
        
+        </div>
+        <div class="Movie_Video">
+            <img src="./Images/black_background.jpg" style="display: none;" alt="describe" id="Black"> 
+            <video id="spider_man_video"  src="./Trailer/spider_man.mp4" style="display: none;" controls  width='900' height='600' onclick="Exit();" >        
         </div>
         
         <!-- <div class="Reveal" style="position:absolute;left:1100px;top:105px;width: 260px;height:500px">
